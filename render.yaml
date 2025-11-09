@@ -1,0 +1,18 @@
+databases:
+  - name: django-lab7-db
+    databaseName: django_lab7
+    user: django_user
+
+services:
+  - type: web
+    name: django-lab7
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "python harry_joseph/manage.py runserver 0.0.0.0:$PORT"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: django-lab7-db
+          property: connectionString
+      - key: PYTHON_VERSION
+        value: "3.11.0"
