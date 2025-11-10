@@ -7,4 +7,7 @@ pip install -r requirements.txt
 echo "Running migrations..."
 python harry_joseph/manage.py migrate
 
+echo "Collecting static assets..."
+python harry_joseph/manage.py collectstatic --no-input
+
 echo "Build completed successfully!"
