@@ -25,7 +25,7 @@ Lab 7 demonstrates Django web development fundamentals with a sleek, modern desi
 
 **Get the complete project instantly:**
 
-[![Download CPAN214-LAB7.ZIP](https://img.shields.io/badge/Download-CPAN214--LAB7.ZIP-0366d6?style=for-the-badge&logo=download&logoColor=white)](https://github.com/hjoseph777/CPAN214-Lab7/releases/download/v1/CPAN214-Lab7.zip")
+[![Download CPAN214-LAB7.ZIP](https://img.shields.io/badge/Download-CPAN214--LAB7.ZIP-0366d6?style=for-the-badge&logo=download&logoColor=white)](https://github.com/hjoseph777/CPAN214-Lab7/releases/download/v1/CPAN214-Lab7.zip)
 
 
 *Complete Django project ready to run*
