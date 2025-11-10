@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f3 0%, #d9e4f5 100%);
+    color: #1f2933;
+}
+
+header {
+    background: #1e3a8a;
+    color: #ffffff;
+    padding: 2.5rem 1rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.35);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 0.04em;
+}
+
+header p {
+    margin: 0.35rem 0 0;
+    font-size: 1.05rem;
+    opacity: 0.85;
+}
+
+main {
+    max-width: 960px;
+    margin: -2.5rem auto 3rem;
+    padding: 0 1.5rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2rem;
+    margin-bottom: 1.75rem;
+    box-shadow: 0 18px 35px -22px rgba(15, 23, 42, 0.65);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    color: #0f172a;
+}
+
+.card p {
+    margin: 0.6rem 0 0;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    background: #1e3a8a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 12px 22px -14px rgba(30, 58, 138, 0.75);
+}
+
+nav a:hover,
+nav a:focus {
+    background: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px -18px rgba(59, 130, 246, 0.75);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.info-card {
+    background: #f8fafc;
+    border: 1px solid rgba(30, 64, 175, 0.15);
+    border-radius: 14px;
+    padding: 1.15rem;
+}
+
+.footer-note {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: rgba(15, 23, 42, 0.7);
+}
+
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    main {
+        margin-top: -1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
