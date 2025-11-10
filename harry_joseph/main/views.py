@@ -13,17 +13,25 @@ def home(request):
     <html>
     <head>
         <title>Harry Joseph - Django Lab 7</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/static/main/style.css">
     </head>
     <body>
-        <h1>Harry Joseph - Django Lab 7</h1>
-        <p>Welcome to my Django project</p>
-        <h3>Pages:</h3>
-        <a href="/greetings/">Greetings Page</a><br>
-        <a href="/now/">Current Time Page</a><br><br>
-        
-        <p>Student: Harry Joseph<br>
-        Student ID: 12345<br>
-        Course: Django Lab 7</p>
+        <div class="container">
+            <h1>Harry Joseph - Django Lab 7</h1>
+            <p>Welcome to my Django project</p>
+            
+            <h3>Pages:</h3>
+            <a href="/greetings/">Greetings Page</a>
+            <a href="/now/">Current Time Page</a>
+            
+            <div class="student-info">
+                <p><strong>Student:</strong> Harry Joseph<br>
+                <strong>Student ID:</strong> 12345<br>
+                <strong>Course:</strong> Django Lab 7</p>
+            </div>
+        </div>
     </body>
     </html>
     """
@@ -35,10 +43,18 @@ def greetings(request):
     <html>
     <head>
         <title>Greetings - Django Lab 7</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/static/main/style.css">
     </head>
     <body>
-        <h1>Harry Joseph - Student ID: 12345</h1>
-        <a href="/">Back to Home</a>
+        <div class="container">
+            <h1>Harry Joseph - Student ID: 12345</h1>
+            <div class="student-info">
+                <p>Welcome! This is the greetings page for Django Lab 7.</p>
+            </div>
+            <a href="/">Back to Home</a>
+        </div>
     </body>
     </html>
     """
@@ -54,11 +70,18 @@ def now(request):
     <html>
     <head>
         <title>Current Time - Django Lab 7</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/static/main/style.css">
     </head>
     <body>
-        <h2>Current Time</h2>
-        <p>{time_str}</p>
-        <a href="/">Back to Home</a>
+        <div class="container">
+            <h2>Current Time</h2>
+            <div class="time-display">
+                <p><strong>{time_str}</strong></p>
+            </div>
+            <a href="/">Back to Home</a>
+        </div>
     </body>
     </html>
     """
