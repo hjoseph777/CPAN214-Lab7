@@ -36,7 +36,6 @@ def home(request):
     """Main landing page."""
     body = """
         <h2>Welcome to my Django project</h2>
-        <p>This lab demonstrates routing, dynamic data, and deployment on Render.</p>
         <nav>
             <a href="/greetings/">Greetings Page</a>
             <a href="/now/">Current Time Page</a>
@@ -80,7 +79,7 @@ def now(request):
     body = f"""
         <h2>Current Time</h2>
         <p>The server time is <strong>{time_str}</strong>.</p>
-        <p>This demonstrates how Django can render dynamic data inside a styled layout.</p>
+       
         <nav>
             <a href="/">Back to Home</a>
             <a href="/greetings/">Visit Greetings</a>
